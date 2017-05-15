@@ -1,0 +1,20 @@
+<div>
+  <div class="container">
+    <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+        <h2>Now your result!</h2>
+        <p>*****************************************************</p>
+        <ul>
+          <li>Your word: <%= @results[:attempt] %></li>
+          <li>Time Taken to answer: <%= @results[:time]  %></li>
+          <li>Translation: <%= @results[:translation] %></li>
+          <li>Your score: <%= @results[:score].round(2) %></li>
+          <li>Message: <%= @results[:message] %></li>
+        </ul>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+

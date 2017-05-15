@@ -1,0 +1,24 @@
+<div class="text-center">
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+
+<h2>Welcome to the longest word-game !</h2>
+<h3>Here is your grid :</h3>
+<h2><% grid = @grid.join("") %> <%= grid %> </h2>
+<p>*****************************************************</p>
+      <form action="/seeresult">
+        <div class="form-group">
+          <input name="grid"        type="hidden"   value="<%= grid %>">
+          <input name="start_time"  type="hidden"   value="<%= @start_time %>">
+          <label>What's your best shot ?</label>
+          <input type="text" class="form-control" name="attempt" placeholder="abc?">
+        </div>
+        <button type="submit" class="btn btn-primary">See results!</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+
